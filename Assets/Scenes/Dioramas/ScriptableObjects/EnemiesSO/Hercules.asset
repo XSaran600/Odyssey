@@ -1,0 +1,292 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 18397316ccad05942b9e9992defcee2a, type: 3}
+  m_Name: Hercules
+  m_EditorClassIdentifier: 
+  _health: 200
+  _maxHP: 200
+  _power: 5
+  _iFramesLength: 0
+  _comboAttacks:
+    power: 1
+    cooldownAfterComboEndGround: 1.5
+    cooldownAfterComboEndAir: 2.5
+    comboBufferTimePercentage: 99.9
+    queueAttackBufferTimePercentage: 25
+    combosArray:
+    - comboSetName: Hydra Barrage
+      attacks:
+      - animationSpeedMultiplier: 1.1
+        attackMultiplier: 2
+        knockbackForce: 33
+        knockupForce: 1
+        attackAnimationName: rig|hydra barrage
+        attackSpeedParameterName: AtkSpd_CerberusBarrage1
+        fxImpactPrefab: {fileID: 0}
+        fxAttackPrefab: {fileID: 0}
+        comboPriority: 0
+        isFinisher: 0
+        skipAttack: 0
+        attackLengthOverride: 0
+      - animationSpeedMultiplier: 1.75
+        attackMultiplier: 2
+        knockbackForce: 33
+        knockupForce: 1
+        attackAnimationName: rig|hydra barrage
+        attackSpeedParameterName: AtkSpd_CerberusBarrage1
+        fxImpactPrefab: {fileID: 0}
+        fxAttackPrefab: {fileID: 0}
+        comboPriority: 0
+        isFinisher: 0
+        skipAttack: 0
+        attackLengthOverride: 0
+    - comboSetName: Ceryneian Rush
+      attacks:
+      - animationSpeedMultiplier: 1.1
+        attackMultiplier: 5
+        knockbackForce: 44
+        knockupForce: 25
+        attackAnimationName: rig|ceryneian slash
+        attackSpeedParameterName: AtkSpd_CerberusBarrage1
+        fxImpactPrefab: {fileID: 0}
+        fxAttackPrefab: {fileID: 0}
+        comboPriority: 0
+        isFinisher: 0
+        skipAttack: 0
+        attackLengthOverride: 0
+      - animationSpeedMultiplier: 1.75
+        attackMultiplier: 5
+        knockbackForce: 44
+        knockupForce: 25
+        attackAnimationName: rig|ceryneian slash
+        attackSpeedParameterName: AtkSpd_CerberusBarrage1
+        fxImpactPrefab: {fileID: 0}
+        fxAttackPrefab: {fileID: 0}
+        comboPriority: 0
+        isFinisher: 0
+        skipAttack: 0
+        attackLengthOverride: 0
+    - comboSetName: ignore
+      attacks:
+      - animationSpeedMultiplier: 1.5
+        attackMultiplier: 0
+        knockbackForce: 0
+        knockupForce: 0
+        attackAnimationName: rig|Heracles Poses
+        attackSpeedParameterName: AtkSpd_CerberusBarrage1
+        fxImpactPrefab: {fileID: 1837398281301428, guid: 40ccb30dafa67154abdb2c7efe0034a0,
+          type: 3}
+        fxAttackPrefab: {fileID: 0}
+        comboPriority: 0
+        isFinisher: 0
+        skipAttack: 0
+        attackLengthOverride: 0
+    - comboSetName: NO!
+      attacks:
+      - animationSpeedMultiplier: 0
+        attackMultiplier: 0
+        knockbackForce: 0
+        knockupForce: 0
+        attackAnimationName: 
+        attackSpeedParameterName: 
+        fxImpactPrefab: {fileID: 0}
+        fxAttackPrefab: {fileID: 0}
+        comboPriority: 0
+        isFinisher: 0
+        skipAttack: 0
+        attackLengthOverride: 0
+      - animationSpeedMultiplier: 0
+        attackMultiplier: 0
+        knockbackForce: 0
+        knockupForce: 0
+        attackAnimationName: 
+        attackSpeedParameterName: 
+        fxImpactPrefab: {fileID: 0}
+        fxAttackPrefab: {fileID: 0}
+        comboPriority: 0
+        isFinisher: 0
+        skipAttack: 0
+        attackLengthOverride: 0
+      - animationSpeedMultiplier: 0
+        attackMultiplier: 0
+        knockbackForce: 0
+        knockupForce: 0
+        attackAnimationName: 
+        attackSpeedParameterName: 
+        fxImpactPrefab: {fileID: 0}
+        fxAttackPrefab: {fileID: 0}
+        comboPriority: 0
+        isFinisher: 0
+        skipAttack: 0
+        attackLengthOverride: 0
+      - animationSpeedMultiplier: 0
+        attackMultiplier: 0
+        knockbackForce: 0
+        knockupForce: 0
+        attackAnimationName: 
+        attackSpeedParameterName: 
+        fxImpactPrefab: {fileID: 0}
+        fxAttackPrefab: {fileID: 0}
+        comboPriority: 0
+        isFinisher: 0
+        skipAttack: 0
+        attackLengthOverride: 0
+      - animationSpeedMultiplier: 0
+        attackMultiplier: 0
+        knockbackForce: 0
+        knockupForce: 0
+        attackAnimationName: 
+        attackSpeedParameterName: 
+        fxImpactPrefab: {fileID: 0}
+        fxAttackPrefab: {fileID: 0}
+        comboPriority: 0
+        isFinisher: 0
+        skipAttack: 0
+        attackLengthOverride: 0
+      - animationSpeedMultiplier: 0
+        attackMultiplier: 0
+        knockbackForce: 0
+        knockupForce: 0
+        attackAnimationName: 
+        attackSpeedParameterName: 
+        fxImpactPrefab: {fileID: 0}
+        fxAttackPrefab: {fileID: 0}
+        comboPriority: 0
+        isFinisher: 0
+        skipAttack: 0
+        attackLengthOverride: 0
+      - animationSpeedMultiplier: 0
+        attackMultiplier: 0
+        knockbackForce: 0
+        knockupForce: 0
+        attackAnimationName: 
+        attackSpeedParameterName: 
+        fxImpactPrefab: {fileID: 0}
+        fxAttackPrefab: {fileID: 0}
+        comboPriority: 0
+        isFinisher: 0
+        skipAttack: 0
+        attackLengthOverride: 0
+    - comboSetName: Wrath of the Lion
+      attacks:
+      - animationSpeedMultiplier: 0
+        attackMultiplier: 0
+        knockbackForce: 0
+        knockupForce: 0
+        attackAnimationName: 
+        attackSpeedParameterName: 
+        fxImpactPrefab: {fileID: 0}
+        fxAttackPrefab: {fileID: 0}
+        comboPriority: 0
+        isFinisher: 0
+        skipAttack: 0
+        attackLengthOverride: 0
+      - animationSpeedMultiplier: 0
+        attackMultiplier: 0
+        knockbackForce: 0
+        knockupForce: 0
+        attackAnimationName: 
+        attackSpeedParameterName: 
+        fxImpactPrefab: {fileID: 0}
+        fxAttackPrefab: {fileID: 0}
+        comboPriority: 0
+        isFinisher: 0
+        skipAttack: 0
+        attackLengthOverride: 0
+      - animationSpeedMultiplier: 0
+        attackMultiplier: 0
+        knockbackForce: 0
+        knockupForce: 0
+        attackAnimationName: 
+        attackSpeedParameterName: 
+        fxImpactPrefab: {fileID: 0}
+        fxAttackPrefab: {fileID: 0}
+        comboPriority: 0
+        isFinisher: 0
+        skipAttack: 0
+        attackLengthOverride: 0
+    - comboSetName: Wrath of the Lion
+      attacks:
+      - animationSpeedMultiplier: 0
+        attackMultiplier: 0
+        knockbackForce: 0
+        knockupForce: 0
+        attackAnimationName: 
+        attackSpeedParameterName: 
+        fxImpactPrefab: {fileID: 0}
+        fxAttackPrefab: {fileID: 0}
+        comboPriority: 0
+        isFinisher: 0
+        skipAttack: 0
+        attackLengthOverride: 0
+      - animationSpeedMultiplier: 0
+        attackMultiplier: 0
+        knockbackForce: 0
+        knockupForce: 0
+        attackAnimationName: 
+        attackSpeedParameterName: 
+        fxImpactPrefab: {fileID: 0}
+        fxAttackPrefab: {fileID: 0}
+        comboPriority: 0
+        isFinisher: 0
+        skipAttack: 0
+        attackLengthOverride: 0
+      - animationSpeedMultiplier: 0
+        attackMultiplier: 0
+        knockbackForce: 0
+        knockupForce: 0
+        attackAnimationName: 
+        attackSpeedParameterName: 
+        fxImpactPrefab: {fileID: 0}
+        fxAttackPrefab: {fileID: 0}
+        comboPriority: 0
+        isFinisher: 0
+        skipAttack: 0
+        attackLengthOverride: 0
+    - comboSetName: Wrath of the Lion
+      attacks:
+      - animationSpeedMultiplier: 0
+        attackMultiplier: 0
+        knockbackForce: 0
+        knockupForce: 0
+        attackAnimationName: 
+        attackSpeedParameterName: 
+        fxImpactPrefab: {fileID: 0}
+        fxAttackPrefab: {fileID: 0}
+        comboPriority: 0
+        isFinisher: 0
+        skipAttack: 0
+        attackLengthOverride: 0
+      - animationSpeedMultiplier: 0
+        attackMultiplier: 0
+        knockbackForce: 0
+        knockupForce: 0
+        attackAnimationName: 
+        attackSpeedParameterName: 
+        fxImpactPrefab: {fileID: 0}
+        fxAttackPrefab: {fileID: 0}
+        comboPriority: 0
+        isFinisher: 0
+        skipAttack: 0
+        attackLengthOverride: 0
+      - animationSpeedMultiplier: 0
+        attackMultiplier: 0
+        knockbackForce: 0
+        knockupForce: 0
+        attackAnimationName: 
+        attackSpeedParameterName: 
+        fxImpactPrefab: {fileID: 0}
+        fxAttackPrefab: {fileID: 0}
+        comboPriority: 0
+        isFinisher: 0
+        skipAttack: 0
+        attackLengthOverride: 0

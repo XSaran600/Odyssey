@@ -1,0 +1,59 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a8aa89d5a257d61418cc6d766622d816, type: 3}
+  m_Name: Wind Blade
+  m_EditorClassIdentifier: 
+  spellID: 8
+  spellName: Windblade
+  spellDescription: 
+  spellIcon: {fileID: 0}
+  castTime: 1
+  power: 2
+  knockbackForce: 15
+  manaCost: 1
+  isSpellProjectile: 1
+  speed: 10
+  projSpawnDelay: 0
+  projectileModel: {fileID: 1589245581719068, guid: e865b065887ee5742b7282a5ea6554ee,
+    type: 3}
+  projectileImpact: {fileID: 1943573974307894, guid: 4857609a6c0625349a60bbb4b5fa5ec5,
+    type: 3}
+  projectileRotation: {x: 0, y: 0, z: 0}
+  projectileOffset: {x: 0, y: 0, z: 0}
+  multipleProjectiles: 0
+  projectileCount: 0
+  projectileInterval: 0
+  projectileArc: 0
+  isSpellInstantAOE: 0
+  radius: 0
+  originIsPlayer: 0
+  originIsEnemy: 0
+  origin: {fileID: 0}
+  sfxAoEImpact: {fileID: 0}
+  isBuff: 0
+  atkSpeedBuff: 0
+  atkSpeedModifier: 0
+  buffFX: {fileID: 0}
+  buffDuration: 0
+  healSingle: 0
+  healSingleAmount: 0
+  regenOverTime: 0
+  regenOverTimeAmountPerSecond: 0
+  regenDuration: 0
+  extraVisual: 1
+  playerAnimationStringName: Spell_Cast
+  playerAnimationSpeedMultiplierParameterStringName: Spell_IceField_Speed
+  playerAnimationSpeedMultiplier: 1
+  sfxOnPlayer: {fileID: 0}
+  sfxDuration: 0
+  sfxRotation: {x: 0, y: 0, z: 0}
+  slowMotionEffect: 0

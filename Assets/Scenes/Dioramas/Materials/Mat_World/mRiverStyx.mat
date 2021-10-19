@@ -1,0 +1,129 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-3864086880497215235
+MonoBehaviour:
+  m_ObjectHideFlags: 11
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da692e001514ec24dbc4cca1949ff7e8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  version: 2
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: mRiverStyx
+  m_Shader: {fileID: -6465566751694194690, guid: 150ae4f963e854d49bf1db957e53e8a3,
+    type: 3}
+  m_ShaderKeywords: _BLENDMODE_ALPHA _DOUBLESIDED_ON _ENABLE_FOG_ON_TRANSPARENT _SURFACE_TYPE_TRANSPARENT
+  m_LightmapFlags: 0
+  m_EnableInstancingVariants: 1
+  m_DoubleSidedGI: 1
+  m_CustomRenderQueue: 3000
+  stringTagMap:
+    MotionVector: User
+    RenderType: Transparent
+  disabledShaderPasses:
+  - MOTIONVECTORS
+  - TransparentBackface
+  - TransparentDepthPrepass
+  - TransparentDepthPostpass
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - Texture2D_8DBEBDB9:
+        m_Texture: {fileID: 2800000, guid: afc6072637d6bb34d94e1cd85b1f1ddd, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - Texture2D_BE3D8C68:
+        m_Texture: {fileID: 2800000, guid: b0008cd707718754098c649dd6f47ad8, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SampleTexture2D_C109AFD4_Texture_1:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - Vector1_134F3914: 1
+    - Vector1_1ABD8CCF: 1
+    - Vector1_2475BE06: 0.1
+    - Vector1_24F8AD05: 10
+    - Vector1_2A2E4F21: 0.13
+    - Vector1_45DBBF38: 0.055
+    - Vector1_4A6B5272: 0.3
+    - Vector1_57A5C33B: 1
+    - Vector1_66C04B9D: 0.58
+    - Vector1_6750DC9C: 0.2
+    - Vector1_6846F6E1: 10
+    - Vector1_7822E4D: 13
+    - Vector1_B17635C4: 0.1
+    - Vector1_BB76100C: 0.21
+    - Vector1_BC4ADDA0: 0.01
+    - Vector1_C5DE363B: 0.06
+    - Vector1_C712286C: 0
+    - Vector1_C945A9EE: 0.09
+    - Vector1_CA7253DD: 0.1
+    - Vector1_CF7413A4: 1039.66
+    - Vector1_DE78126: 0.64
+    - Vector1_E876E71C: 26.08
+    - Vector1_F16B75D9: 0.2
+    - Vector1_F2EB43C0: 0.05
+    - _AlphaCutoffEnable: 0
+    - _AlphaDstBlend: 10
+    - _AlphaSrcBlend: 1
+    - _BlendMode: 0
+    - _CullMode: 0
+    - _CullModeForward: 0
+    - _DoubleSidedEnable: 1
+    - _DoubleSidedNormalMode: 2
+    - _DstBlend: 10
+    - _EnableFogOnTransparent: 1
+    - _ReceivesSSR: 1
+    - _RenderQueueType: 5
+    - _RequireSplitLighting: 0
+    - _SrcBlend: 1
+    - _StencilRef: 0
+    - _StencilRefDepth: 8
+    - _StencilRefDistortionVec: 4
+    - _StencilRefGBuffer: 10
+    - _StencilRefMV: 40
+    - _StencilWriteMask: 6
+    - _StencilWriteMaskDepth: 8
+    - _StencilWriteMaskDistortionVec: 4
+    - _StencilWriteMaskGBuffer: 14
+    - _StencilWriteMaskMV: 40
+    - _SurfaceType: 1
+    - _TransparentBackfaceEnable: 0
+    - _TransparentCullMode: 2
+    - _TransparentDepthPostpassEnable: 0
+    - _TransparentDepthPrepassEnable: 0
+    - _TransparentSortPriority: 0
+    - _TransparentZWrite: 1
+    - _UseShadowThreshold: 0
+    - _ZTestDepthEqualForOpaque: 4
+    - _ZTestGBuffer: 4
+    - _ZTestTransparent: 4
+    - _ZWrite: 1
+    m_Colors:
+    - Color_35A96C79: {r: 0, g: 0.21458952, b: 0.3584906, a: 0}
+    - Color_40D8978C: {r: 8.438498, g: 8.438498, b: 20.562775, a: 0}
+    - Color_4CB3BA42: {r: 0.09433961, g: 0.09433961, b: 0.09433961, a: 0}
+    - Color_6AE2FBA3: {r: 0, g: 0, b: 1, a: 0}
+    - Color_8CF0A1CF: {r: 0, g: 0.17977524, b: 1, a: 0}
+    - Color_BF33CFF0: {r: 0.1981132, g: 0.1981132, b: 0.1981132, a: 0}
+    - Vector2_1C2157C3: {r: 3, g: 3, b: 0, a: 0}
+    - Vector2_3FB7582C: {r: 30, g: 30, b: 0, a: 0}
+    - Vector2_6959ACBC: {r: 7, g: 7, b: 0, a: 0}
+    - Vector2_704FBBCC: {r: 20, g: 20, b: 0, a: 0}
+    - Vector2_AC19855: {r: 100, g: 100, b: 0, a: 0}
+    - Vector2_D117413C: {r: 11.26, g: 15, b: 0, a: 0}
+    - _DoubleSidedConstants: {r: 1, g: 1, b: 1, a: 0}
+    - _EmissionColor: {r: 1, g: 1, b: 1, a: 1}

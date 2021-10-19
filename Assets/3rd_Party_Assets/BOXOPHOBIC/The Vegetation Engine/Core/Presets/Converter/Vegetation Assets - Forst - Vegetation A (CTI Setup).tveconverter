@@ -1,0 +1,15 @@
+*******************************************************************
+*                             INFO                                *
+*******************************************************************
+
+Include Custom Tree Importer Info
+InfoStatus Mixed motion, Variation from Vertex Red, Procedural moss mask, Procedural capsule vertex occlusion
+InfoOnline https://assetstore.unity.com/packages/tools/modeling/custom-tree-importer-21079
+
+*******************************************************************
+*                             PRESET                              *
+*******************************************************************
+
+Include Custom Tree Importer Commons
+
+Mesh Variation GET_MASK_FROM_CHANNEL 0

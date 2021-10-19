@@ -1,0 +1,62 @@
+*******************************************************************
+*                             INFO                                *
+*******************************************************************
+
+InfoPreset Use this preset to convert Nature Manufacture Grass (with Grass shaders). Variation is added automatically, but it might not work as expected!
+InfoStatus Good motion quality, Procedural variation (Slow), Procedural top down vertex occlusion
+InfoOnline https://assetstore.unity.com/publishers/6887
+
+*******************************************************************
+*                             PRESET                              *
+*******************************************************************
+
+Conversion DYNAMIC
+
+Mesh Variation GET_MASK_PROCEDURAL 3
+Mesh Occlusion GET_MASK_PROCEDURAL 4
+Mesh DetailMask NONE
+Mesh DetailCoord NONE
+
+Mesh Motion1 GET_MASK_PROCEDURAL 4
+Mesh Motion2 GET_MASK_PROCEDURAL 4
+Mesh Motion3 GET_MASK_FROM_CHANNEL 3
+
+// Set Material Shader
+Material SHADER_NAME_TO_SHADER Bark VEGETATION_STANDARD
+
+// Disable Features for Bark
+Material SHADER_NAME_TO_FLOAT Bark _Motion_30 0
+Material SHADER_NAME_TO_FLOAT Bark _Motion_32 0
+Material SHADER_NAME_TO_FLOAT Bark _GlobalColors 0
+Material SHADER_NAME_TO_KEYWORD_OFF Bark _ALPHATEST_ON
+Material SHADER_NAME_TO_FLOAT Bark _render_clip 0
+
+// Set Default values
+Material SET_FLOAT _render_normals 0
+Material SET_COLOR _SubsurfaceColor 0.1 0.1 0.0 1.0
+
+//Enable Betail shading
+Material KEYWORD_ON_TO_KEYWORD_ON _DETALUSEUV3_ON _DETAIL_HEIGHT
+Material KEYWORD_ON_TO_FLOAT _DETALUSEUV3_ON _DetailMode 2
+// The proper way to use the MainMask as a lerp mask
+Material SET_FLOAT _MainMaskValue 0
+Material SET_FLOAT _DetailMaskContrast 0.75
+
+// Copy material props
+Material COPY_COLOR _Color _MainColor
+Material COPY_COLOR _HealthyColor _MainColor
+Material COPY_COLOR _DryColor _MainColorVariation
+Material COPY_TEX _MainTex _MainAlbedoTex
+Material COPY_ST_AS_VECTOR _MainTex _MainUVs
+Material COPY_TEX _BumpMap _MainNormalTex
+Material COPY_FLOAT _BumpScale _MainNormalValue
+Material COPY_TEX _MetalicRAOGSmothnessA _MainMaskTex
+Material COPY_FLOAT _MetallicPower _MainMetallicValue
+Material SET_FLOAT _MainSmoothnessValue 0.2
+Material COPY_FLOAT _AmbientOcclusionPower _MainOcclusionValue
+
+Material COPY_TEX _DetailAlbedoMap _SecondAlbedoTex
+Material COPY_TEX _DetailNormalMap _SecondNormalTex
+Material COPY_FLOAT _DetailNormalMapScale _SecondNormalValue
+Material COPY_TEX _AmbientOcclusionG _SecondMaskTex
+Material SET_FLOAT _SecondSmoothnessValue 0.2

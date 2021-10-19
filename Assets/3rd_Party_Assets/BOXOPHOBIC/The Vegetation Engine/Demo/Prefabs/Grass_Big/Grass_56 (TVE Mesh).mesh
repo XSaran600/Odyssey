@@ -1,0 +1,162 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!43 &4300000
+Mesh:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Grass_56 (TVE Mesh)
+  serializedVersion: 9
+  m_SubMeshes:
+  - serializedVersion: 2
+    firstByte: 0
+    indexCount: 24
+    topology: 0
+    baseVertex: 0
+    firstVertex: 0
+    vertexCount: 16
+    localAABB:
+      m_Center: {x: 0, y: 0.54712534, z: 0.000000059604645}
+      m_Extent: {x: 0.68340737, y: 0.7532654, z: 0.84268}
+  m_Shapes:
+    vertices: []
+    shapes: []
+    channels: []
+    fullWeights: []
+  m_BindPose: []
+  m_BoneNameHashes: 
+  m_RootBoneNameHash: 0
+  m_MeshCompression: 0
+  m_IsReadable: 1
+  m_KeepVertices: 1
+  m_KeepIndices: 1
+  m_IndexFormat: 0
+  m_IndexBuffer: 000001000200000002000300040005000600040006000700080009000a0008000a000b000c000d000e000c000e000f00
+  m_VertexData:
+    serializedVersion: 2
+    m_VertexCount: 16
+    m_Channels:
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 3
+    - stream: 0
+      offset: 12
+      format: 0
+      dimension: 3
+    - stream: 0
+      offset: 24
+      format: 0
+      dimension: 4
+    - stream: 0
+      offset: 40
+      format: 0
+      dimension: 4
+    - stream: 0
+      offset: 56
+      format: 0
+      dimension: 4
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 72
+      format: 0
+      dimension: 4
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    m_DataSize: 1408
+    _typelessdata: c9f32ebf33e849bee5190c3ea71f75bf20e0fe3d823285bedca1883e6668253de37f76bf000080bffabe383f000000000000803f000000000dd35c3fdc010a3c0dd35c3fdc010a3c00000000000000000000000000000000012e1ebf8f9e2b3f93139f3ea71f75bf1ee0fe3d823285bedaa1883e4568253de37f76bf000080bffabe383fae0dc63e0000803fae0dc63ef6eb573fadc51e3ef6eb573fadc51e3eae0dc63eae0dc63eae0dc63e00000000d418d1be80ce433fc492d4bea71f75bf1ee0fe3d823285bedca1883e5e68253de37f76bf000080bffabe383f59f7e13e0000803f59f7e13e924a783f48c3293e924a783f48c3293e59f7e13e59f7e13e59f7e13e000000002b8cf8bec3ce27bea96c13bfa71f75bf1ee0fe3d823285bedca1883e7f68253de37f76bf000080bffabe383f000000000000803f00000000656a7c3f335f133c656a7c3f335f133c0000000000000000000000000000000000bbe6bdf6f99c3fdfb957bf25616bbf5ca6983e7141833e6e8289be61d73433299876bf000080bfe23ca13eb227353f0000803fb227353fc72d363f6708cf3ec72d363f6708cf3eb227353fb227353fb227353f000000002abe10bfa8f32ebe4f6c57bf27616bbf5ba6983e7141833e6e8289be61d73433299876bf000080bfe23ca13e000000000000803f0000000077513b3f573e243e77513b3f573e243e000000000000000000000000000000005eb598be297223be1d1ad43d25616bbf5ba6983e7041833e6f8289be61d73433299876bf000080bfe23ca13e000000000000803f00000000756a113fa140263e756a113fa140263e00000000000000000000000000000000243b343e46d49b3f1df34f3e25616bbf5ba6983e7041833e6d8289be61d73433299876bf000080bfe23ca13ec5d4333f0000803fc5d4333f30e4073f463bce3e30e4073f463bce3ec5d4333fc5d4333fc5d4333f000000008f863d3d7c23a03fc85c53be88f36cbfbb00aebe62af2a3e00655fbee0e3f33d7ef777bf000080bf0009593ee8cd383f0000803fe8cd383fc72d363f6708cf3ec72d363f6708cf3ee8cd383fe8cd383fe8cd383f000000008c12f23ead24cdbd39cc17bf88f36cbfbb00aebe62af2a3eff645fbed7e3f33d80f777bf000080bf0009593e000000000000803f0000000077513b3f573e243e77513b3f573e243e00000000000000000000000000000000c9f32e3f5e1653bec590b83e88f36cbfbb00aebe62af2a3e00655fbedde3f33d7ef777bf000080bf0009593e000000000000803f00000000756a113fa140263e756a113fa140263e00000000000000000000000000000000a65a923e097b8e3fe1b9573f86f36cbfbb00aebe61af2a3e02655fbee5e3f33d7ef777bf000080bf0009593e2f6d243f0000803f2f6d243f30e4073f463bce3e30e4073f463bce3e2f6d243f2f6d243f2f6d243f000000008570f93d3473a63f5384c2be332b7dbf96380ebe511c553d04697fbd1e8c913d6eda7ebf000080bff819593f7d16403f0000803f7d16403fc72d363f6708cf3ec72d363f6708cf3e7d16403f7d16403f7d16403f00000000525e9f3e5d360cbefd891dbf332b7dbf97380ebe521c553d02697fbd118c913d6eda7ebf000080bff819593f000000000000803f0000000077513b3f573e243e77513b3f573e243e000000000000000000000000000000006be9bd3eb8c647be4df9b93e332b7dbf96380ebe511c553d00697fbd198c913d6eda7ebf000080bff819593f000000000000803f00000000756a113fa140263e756a113fa140263e00000000000000000000000000000000f048433ee6649b3f5408333f332b7dbf97380ebe521c553d06697fbd258c913d6eda7ebf000080bff819593f3e54333f0000803f3e54333f30e4073f463bce3e30e4073f463bce3e3e54333f3e54333f3e54333f00000000
+  m_CompressedMesh:
+    m_Vertices:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_UV:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Normals:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Tangents:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Weights:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_NormalSigns:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_TangentSigns:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_FloatColors:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_BoneIndices:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Triangles:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_UVInfo: 0
+  m_LocalAABB:
+    m_Center: {x: 0, y: 0.54712534, z: 0.000000059604645}
+    m_Extent: {x: 0.68340737, y: 0.7532654, z: 0.84268}
+  m_MeshUsageFlags: 0
+  m_BakedConvexCollisionMesh: 
+  m_BakedTriangleCollisionMesh: 
+  m_MeshMetrics[0]: 36.000015
+  m_MeshMetrics[1]: 1
+  m_MeshOptimized: 1
+  m_StreamData:
+    offset: 0
+    size: 0
+    path: 

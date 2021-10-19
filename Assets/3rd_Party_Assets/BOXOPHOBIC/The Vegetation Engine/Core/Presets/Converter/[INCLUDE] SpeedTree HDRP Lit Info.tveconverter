@@ -1,0 +1,2 @@
+InfoPreset Use this preset to convert vegetation exported with the HDRP setup and using Lit shaders. SpeedTree assets can not be converted directly, you will need to create a new prefab first! SpeedTree prefabs might not work as expected! SpeedTree7 Billboard Renderers are not supported!
+InfoStatus Variable motion quality, Mesh variation (Fast), Variable vertex occlusion

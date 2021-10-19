@@ -1,0 +1,126 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: mxRock3
+  m_Shader: {fileID: -6465566751694194690, guid: f62a37153da4e49438ba524f118bff0a,
+    type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: 2000
+  stringTagMap:
+    MotionVector: User
+  disabledShaderPasses:
+  - MOTIONVECTORS
+  - TransparentDepthPrepass
+  - TransparentDepthPostpass
+  - TransparentBackface
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - Texture2D_10A384F9:
+        m_Texture: {fileID: 2800000, guid: 480cf61124bbce040a298db0dce065eb, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - Texture2D_6B4C0A8E:
+        m_Texture: {fileID: 2800000, guid: 53808e0ff8efa0947a03a02a07b4af64, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - Texture2D_88CE3A1:
+        m_Texture: {fileID: 2800000, guid: 7d7c33a956fc1e34f8653182ff305e4a, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - Texture2D_9D7BA6CB:
+        m_Texture: {fileID: 2800000, guid: caf366ffbcc02704bb22d2e07dbb7396, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - Texture2D_BCD3B722:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - Texture2D_F1B376CC:
+        m_Texture: {fileID: 2800000, guid: e8174a4f269c9fb458d5a1bb5d0fa897, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - Vector1_244F6659: 0.3
+    - Vector1_3378B47D: 57.45
+    - Vector1_4805793B: 0.75
+    - Vector1_49A2BCAE: 1
+    - Vector1_4E4A2693: 1
+    - Vector1_4F50D8AA: 10
+    - Vector1_57CFFFFC: 0
+    - Vector1_5A32CB18: 0.1
+    - Vector1_6B7E3BA0: 2000
+    - Vector1_830A043F: 958.26
+    - Vector1_835874CB: 1
+    - Vector1_A6D87679: 1
+    - Vector1_B60DF7AC: 1
+    - Vector1_C7DE5CAC: 1.84
+    - Vector1_D21D6BA6: 0
+    - Vector1_D332ECAD: 0
+    - Vector1_D64D5F74: 0.11
+    - Vector1_D6FD3DA0: 0
+    - Vector1_DD210D8C: 1
+    - _AlphaCutoffEnable: 0
+    - _AlphaDstBlend: 0
+    - _AlphaSrcBlend: 1
+    - _BlendMode: 0
+    - _CullMode: 2
+    - _CullModeForward: 2
+    - _DoubleSidedEnable: 0
+    - _DoubleSidedNormalMode: 2
+    - _DstBlend: 0
+    - _EnableFogOnTransparent: 1
+    - _ReceivesSSR: 1
+    - _RenderQueueType: 1
+    - _RequireSplitLighting: 0
+    - _SrcBlend: 1
+    - _StencilRef: 0
+    - _StencilRefDepth: 8
+    - _StencilRefDistortionVec: 4
+    - _StencilRefGBuffer: 10
+    - _StencilRefMV: 40
+    - _StencilWriteMask: 6
+    - _StencilWriteMaskDepth: 8
+    - _StencilWriteMaskDistortionVec: 4
+    - _StencilWriteMaskGBuffer: 14
+    - _StencilWriteMaskMV: 40
+    - _SurfaceType: 0
+    - _TransparentBackfaceEnable: 0
+    - _TransparentCullMode: 2
+    - _TransparentDepthPostpassEnable: 0
+    - _TransparentDepthPrepassEnable: 0
+    - _TransparentSortPriority: 0
+    - _TransparentZWrite: 0
+    - _UseShadowThreshold: 0
+    - _ZTestDepthEqualForOpaque: 3
+    - _ZTestGBuffer: 4
+    - _ZTestTransparent: 4
+    - _ZWrite: 1
+    m_Colors:
+    - Color_AD2D0753: {r: 0, g: 0, b: 0, a: 0}
+    - Color_CE1D75B: {r: 0.3207547, g: 0.3207547, b: 0.3207547, a: 0}
+    - Color_E9CE416F: {r: 0.31132075, g: 0.31132075, b: 0.31132075, a: 0}
+    - _DoubleSidedConstants: {r: 1, g: 1, b: -1, a: 0}
+    - _EmissionColor: {r: 1, g: 1, b: 1, a: 1}
+--- !u!114 &1145830047903427087
+MonoBehaviour:
+  m_ObjectHideFlags: 11
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da692e001514ec24dbc4cca1949ff7e8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  version: 2

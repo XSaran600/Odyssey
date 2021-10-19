@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d4829572fcd2f98479c803ffaf809268, type: 3}
+  m_Name: wep-Tizona
+  m_EditorClassIdentifier: 
+  ItemID: 9
+  TargetInventoryName: MainWeaponInv
+  Usable: 0
+  Equippable: 1
+  Quantity: 1
+  ItemName: Ashen Brand
+  ShortDescription: Arming Sword
+  Description: 'The greeting of an Archangel is etched onto the blade of this intricate
+    sword.
+
+
+    Glancing upon the sword, the armament frightens those unworthy of
+    weilding it.'
+  CanMoveObject: 1
+  CanSwapObject: 1
+  Icon: {fileID: 21300000, guid: d48cd601a46e9d342b9711ba007d9720, type: 3}
+  Prefab: {fileID: 0}
+  SpawnShape: 1
+  PrefabDropMinDistance: {x: 2, y: 2, z: 0}
+  PrefabDropMaxDistance: {x: 3, y: 3, z: 0}
+  MaximumStack: 1
+  ItemClass: 1
+  TargetEquipmentInventoryName: WeaponInv
+  EquippedSound: {fileID: 0}
+  UsedSound: {fileID: 0}
+  MovedSound: {fileID: 0}
+  DroppedSound: {fileID: 0}
+  UseDefaultSoundsIfNull: 1
+  weaponName: Trident

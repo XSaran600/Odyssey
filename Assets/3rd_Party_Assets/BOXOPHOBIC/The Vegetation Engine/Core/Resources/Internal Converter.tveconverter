@@ -1,0 +1,68 @@
+*******************************************************************
+*                             INFO                                *
+*******************************************************************
+
+InfoPreset No message from the developer!
+
+*******************************************************************
+*                             PRESET                              *
+*******************************************************************
+
+Conversion DYNAMIC
+
+// Set Mesh Masks
+Mesh Variation NONE
+Mesh Occlusion NONE
+Mesh DetailMask NONE
+Mesh DetailCoord NONE
+
+Mesh Motion1 NONE
+Mesh Motion2 NONE
+Mesh Motion3 NONE
+
+//Mesh Hierarchy NONE
+//Mesh Pivots NONE
+//Mesh Directions NONE
+
+Include Opaque by RenderType
+Include Materials by Unity Defaults
+
+// Copy Standard Pipeline Material Properties
+//Material COLOR_TO_COLOR _Color _MainColor
+//Material COLOR_TO_COLOR _Color _MainColorVariation
+//Material TEX_TO_TEX _MainTex _MainAlbedoTex
+//Material ST_TO_VECTOR _MainTex _MainUVs
+//Material TEX_TO_TEX _BumpMap _MainNormalTex
+//Material FLOAT_TO_FLOAT _BumpScale _MainNormalValue
+//Material TEX_TO_TEX _MetallicGlossMap _MainMaskTex
+//Material FLOAT_TO_FLOAT _Metallic _MainMetallicValue
+//Material FLOAT_TO_FLOAT _OcclusionStrength _MainOcclusionValue
+//Material FLOAT_TO_FLOAT _Glossiness _MainSmoothnessValue
+//Material FLOAT_TO_FLOAT _GlossMapScale _MainSmoothnessValue
+
+//Material COLOR_TO_COLOR _Color2 _SecondColor
+//Material TEX_TO_TEX _AlbedoTex2 _SecondAlbedoTex
+//Material VECTOR_TO_VECTOR _UVZero2 _SecondUVs
+//Material TEX_TO_TEX _NormalTex2 _SecondNormalTex
+//Material FLOAT_TO_FLOAT _NormalScale2 _SecondNormalValue
+//Material TEX_TO_TEX _SurfaceTex2 _SecondMaskTex
+//Material SET_FLOAT _SecondMetallicValue 0
+//Material FLOAT_TO_FLOAT _Occlusion2 _SecondOcclusionValue
+//Material FLOAT_TO_FLOAT _Smoothness2 _SecondSmoothnessValue
+
+// Combine Texture Channels
+//Texture MainMetallic NONE
+//Texture MainOcclusion NONE
+//Texture MainMask NONE
+//Texture MainSmoothness NONE
+
+//Texture SecondMetallic NONE
+//Texture SecondOcclusion NONE
+//Texture SecondMask NONE
+//Texture SecondSmoothness NONE
+
+*******************************************************************
+*                         HOW TO USE IT                           *
+*******************************************************************
+
+https://docs.google.com/document/d/145JOVlJ1tE-WODW45YoJ6Ixg23mFc56EnB_8Tbwloz8/edit#heading=h.ixe04ds5urx7

@@ -1,0 +1,59 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a8aa89d5a257d61418cc6d766622d816, type: 3}
+  m_Name: Heal
+  m_EditorClassIdentifier: 
+  spellID: 3
+  spellName: Heal
+  spellDescription: Heal for 10 health.
+  spellIcon: {fileID: 21300000, guid: d0990ee493d07994fa5098c32b961930, type: 3}
+  castTime: 0.9
+  power: 0
+  knockbackForce: 0
+  manaCost: 15
+  isSpellProjectile: 0
+  speed: 0
+  projSpawnDelay: 0
+  projectileModel: {fileID: 0}
+  projectileImpact: {fileID: 0}
+  projectileRotation: {x: 0, y: 0, z: 0}
+  projectileOffset: {x: 0, y: 0, z: 0}
+  multipleProjectiles: 0
+  projectileCount: 0
+  projectileInterval: 0
+  projectileArc: 0
+  isSpellInstantAOE: 0
+  radius: 2
+  originIsPlayer: 1
+  originIsEnemy: 0
+  origin: {fileID: 7317831348111809748, guid: 3590c8c1d352e0a48820b61bbf382591, type: 3}
+  sfxAoEImpact: {fileID: 7317831348111809745, guid: 3590c8c1d352e0a48820b61bbf382591,
+    type: 3}
+  isBuff: 1
+  atkSpeedBuff: 0
+  atkSpeedModifier: 0
+  buffFX: {fileID: 0}
+  buffDuration: 0
+  healSingle: 1
+  healSingleAmount: 30
+  regenOverTime: 0
+  regenOverTimeAmountPerSecond: 0
+  regenDuration: 0
+  extraVisual: 1
+  playerAnimationStringName: Spell Targeted AOE 2
+  playerAnimationSpeedMultiplierParameterStringName: Spell_IceField_Speed
+  playerAnimationSpeedMultiplier: 2.6
+  sfxOnPlayer: {fileID: 7317831348111809745, guid: 3590c8c1d352e0a48820b61bbf382591,
+    type: 3}
+  sfxDuration: 1
+  sfxRotation: {x: 0, y: 0, z: 0}
+  slowMotionEffect: 0

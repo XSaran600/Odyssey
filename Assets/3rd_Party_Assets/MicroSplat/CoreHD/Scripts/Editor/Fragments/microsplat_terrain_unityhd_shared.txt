@@ -1,0 +1,71 @@
+﻿
+      #undef MICROSPLAT_SAMPLE_TEX2D_LOD
+      #undef MICROSPLAT_SAMPLE_TEX2D_SAMPLER_LOD
+      #undef MICROSPLAT_SAMPLE_TEX2DARRAY_GRAD
+      #undef MICROSPLAT_SAMPLE_TEX2D_SAMPLER_GRAD
+
+      #define MICROSPLAT_SAMPLE_TEX2D_LOD(tex,coord,lod)                    SAMPLE_TEXTURE2D_LOD(tex,sampler_##tex, coord, lod)
+      #define MICROSPLAT_SAMPLE_TEX2DARRAY_GRAD(tex,coord,dx,dy)                 SAMPLE_TEXTURE2D_GRAD(tex,sampler_##tex,coord,dx,dy)
+      #define MICROSPLAT_SAMPLE_TEX2D_SAMPLER_GRAD(tex,samp,coord,dx,dy)    SAMPLE_TEXTURE2D_GRAD(tex,sampler_##samp,coord,dx,dy)
+      #define MICROSPLAT_SAMPLE_TEX2D_SAMPLER_LOD(tex, samp, coord, lod)    SAMPLE_TEXTURE2D_LOD(tex, sampler_##samp, coord, lod)
+
+      inline half3 UnpackNormal(half4 packednormal)
+      {
+         fixed3 normal;
+         normal.xy = packednormal.wy * 2 - 1;
+         normal.z = sqrt(1 - normal.x*normal.x - normal.y * normal.y);
+         return normal;
+      }
+      
+
+      #undef WorldNormalVector
+      #define WorldNormalVector(data, normal) mul(data.TBN, normal)
+
+
+
+
+
+      #define UnityObjectToWorldNormal(normal) mul(GetObjectToWorldMatrix(), normal)
+      
+      
+
+
+      Input DescToInput(SurfaceDescriptionInputs IN)
+      {
+        Input s = (Input)0;
+        s.TBN = float3x3(IN.WorldSpaceTangent, IN.WorldSpaceBiTangent, IN.WorldSpaceNormal);
+        s.worldNormal = IN.WorldSpaceNormal;
+        #if !_SRPTERRAINBLEND
+           s.worldPos = GetAbsolutePositionWS(IN.WorldSpacePosition);
+        #else
+           s.worldPos = IN.WorldSpacePosition;
+        #endif
+        s.viewDir = IN.TangentSpaceViewDirection;
+        s.uv_Control0 = IN.uv0.xy;
+        
+
+        #if _MICROMESH && _MESHUV2
+            s.uv_Diffuse = IN.uv.xy1;
+        #endif
+
+        #if _SRPTERRAINBLEND
+            s.color = IN.VertexColor;
+        #endif
+        return s;
+     }
+
+     #define TESSELLATION_INTERPOLATE_BARY(name, bary) output.name = input0.name * bary.x +  input1.name * bary.y +  input2.name * bary.z
+     
+
+     //MS_EXTENSIONS
+
+
+
+
+     
+    
+
+
+
+
+   

@@ -1,0 +1,51 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: moRock2
+  m_Shader: {fileID: -6465566751694194690, guid: fc1d86bc679583a4ebef55b665c50bdf,
+    type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap:
+    MotionVector: User
+  disabledShaderPasses:
+  - MOTIONVECTORS
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - Texture2D_4FED7601:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - Texture2D_524725B3:
+        m_Texture: {fileID: 2800000, guid: eeb9c840f98efd948992080135b12e90, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - Texture2D_6212A5DD:
+        m_Texture: {fileID: 2800000, guid: 6869a542fca62cb4fb412f6415869286, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - Texture2D_F5F85B9C:
+        m_Texture: {fileID: 2800000, guid: 384b4302c8720694a805c64e2b429c24, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SampleTexture2D_C9AAE8E8_Texture_1:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - Vector1_11E67769: 0
+    - Vector1_1A34F828: 0
+    - Vector1_486F5D75: 0.5
+    m_Colors:
+    - Vector2_8C745085: {r: 0, g: 0, b: 0, a: 0}
+    - Vector2_D2BE13E3: {r: 3, g: 3, b: 0, a: 0}

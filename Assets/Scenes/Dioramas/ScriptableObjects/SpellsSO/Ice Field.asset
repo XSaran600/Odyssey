@@ -1,0 +1,60 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a8aa89d5a257d61418cc6d766622d816, type: 3}
+  m_Name: Ice Field
+  m_EditorClassIdentifier: 
+  spellID: 4
+  spellName: Ice Field
+  spellDescription: Create a field of ice surrounding the player, knocking and staggering
+    enemies back.
+  spellIcon: {fileID: 21300000, guid: 120bb5be50be0b64eb08006af1d859ea, type: 3}
+  castTime: 1.5
+  power: 30
+  knockbackForce: 6
+  manaCost: 3
+  isSpellProjectile: 0
+  speed: 0
+  projSpawnDelay: 0
+  projectileModel: {fileID: 0}
+  projectileImpact: {fileID: 0}
+  projectileRotation: {x: 0, y: 0, z: 0}
+  projectileOffset: {x: 0, y: 0, z: 0}
+  multipleProjectiles: 0
+  projectileCount: 0
+  projectileInterval: 0
+  projectileArc: 0
+  isSpellInstantAOE: 1
+  radius: 6
+  originIsPlayer: 1
+  originIsEnemy: 0
+  origin: {fileID: 0}
+  sfxAoEImpact: {fileID: 1337519082417960, guid: 95e5d8f0b0f75e0438482597f6042816,
+    type: 3}
+  isBuff: 0
+  atkSpeedBuff: 0
+  atkSpeedModifier: 0
+  buffFX: {fileID: 0}
+  buffDuration: 0
+  healSingle: 0
+  healSingleAmount: 0
+  regenOverTime: 0
+  regenOverTimeAmountPerSecond: 0
+  regenDuration: 0
+  extraVisual: 1
+  playerAnimationStringName: Spell_IceField
+  playerAnimationSpeedMultiplierParameterStringName: Spell_IceField_Speed
+  playerAnimationSpeedMultiplier: 2
+  sfxOnPlayer: {fileID: 1649785475109378, guid: a5350f55a28129940887e9678f8ef13b,
+    type: 3}
+  sfxDuration: 4
+  sfxRotation: {x: -90, y: 0, z: 0}
+  slowMotionEffect: 0

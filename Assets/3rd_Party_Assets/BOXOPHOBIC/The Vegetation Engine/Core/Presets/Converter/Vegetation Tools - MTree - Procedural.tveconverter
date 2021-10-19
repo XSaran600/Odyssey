@@ -1,0 +1,57 @@
+*******************************************************************
+*                             INFO                                *
+*******************************************************************
+
+InfoPreset [PREVIEW] Use this preset to convert MTree assets. MTree is in preview mode, better motion quality will come with future updates! MTree assets must be saved as prefabs to be able to convert them.
+InfoStatus Good motion quality, Branch variation is not yet supported, Mesh ambient occlusion
+InfoOnline https://assetstore.unity.com/packages/tools/modeling/mtree-tree-creation-132433
+
+*******************************************************************
+*                             PRESET                              *
+*******************************************************************
+
+Conversion DYNAMIC
+
+// Set Mesh Masks
+Mesh Variation GET_MASK_FROM_CHANNEL 1
+Mesh Occlusion GET_MASK_FROM_CHANNEL 3
+Mesh DetailMask GET_MASK_PROCEDURAL 8
+Mesh DetailCoord GET_COORD_FROM_CHANNEL 0
+
+Mesh Motion1 GET_MASK_PROCEDURAL 4 
+Mesh Motion2 GET_MASK_FROM_CHANNEL 2
+Mesh Motion3 GET_MASK_FROM_CHANNEL 2
+
+*******************************************************************
+
+// Copy Material Properties
+Material COPY_COLOR _Color _MainColor
+Material COPY_TEX _MainTex _MainAlbedoTex
+Material COPY_ST_AS_VECTOR _MainTex _MainUVs
+
+Material COPY_TEX _BumpMap _MainNormalTex
+Material COPY_FLOAT _BumpScale _MainNormalValue
+
+Material COPY_FLOAT _Metallic _MainMetallicValue
+Material COPY_FLOAT _Glossiness _MainSmoothnessValue
+Material SET_FLOAT _ObjectOcclusionValue 0.1
+
+Material COPY_FLOAT _CullMode _render_cull
+Material COPY_FLOAT _DoubleSidedNormalMode _render_normals
+
+Material SET_COLOR _SubsurfaceColor 0.33 0.50 0 0
+
+*******************************************************************
+
+// Set Bark Settings
+Material SHADER_NAME_TO_SHADER Bark VEGETATION_STANDARD
+Material SHADER_NAME_TO_FLOAT Bark _Motion_20 0
+Material SHADER_NAME_TO_FLOAT Bark _Motion_30 0
+Material SHADER_NAME_TO_FLOAT Bark _Motion_32 0
+Material SHADER_NAME_TO_FLOAT Bark _render_clip 0
+
+
+*******************************************************************
+
+// Set Billboard Settings
+Material SHADER_NAME_TO_SHADER Billboard BILLBOARD_SUBSURFACE

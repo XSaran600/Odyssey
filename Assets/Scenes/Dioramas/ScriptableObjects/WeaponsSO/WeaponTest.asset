@@ -1,0 +1,69 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45c724cbcc36c4046bd9b5c7ca119858, type: 3}
+  m_Name: WeaponTest
+  m_EditorClassIdentifier: 
+  _power: 3
+  _cooldownAfterComboEndGround: 0.75
+  _cooldownAfterComboEndAir: 1.5
+  _comboBufferTimePercentage: 90
+  _queueAttackBufferTimePercentage: 70
+  _attacks:
+  - animationSpeedMultiplier: 1
+    isAttack: 1
+    attackMultiplier: 0.8
+    knockbackForce: 1
+    knockupForce: 15
+    attackAnimationName: AirCombo01
+    animationName: airAtk_06
+    attackSpeedParameterName: Katana_AtkSpd_1
+    fxImpactPrefab: {fileID: 1837398281301428, guid: 40ccb30dafa67154abdb2c7efe0034a0,
+      type: 3}
+    fxAttackPrefab: {fileID: 1640603931202854, guid: fe3bfca65b923fd44ab9ce3dde82407a,
+      type: 3}
+    comboPriority: 0
+    isFinisher: 0
+    skipAttack: 0
+    attackLengthOverride: 0
+  - animationSpeedMultiplier: 1
+    isAttack: 1
+    attackMultiplier: 1
+    knockbackForce: 2
+    knockupForce: 5
+    attackAnimationName: GroundCombo02
+    animationName: groundCombo01_2
+    attackSpeedParameterName: Katana_AtkSpd_1
+    fxImpactPrefab: {fileID: 1837398281301428, guid: 40ccb30dafa67154abdb2c7efe0034a0,
+      type: 3}
+    fxAttackPrefab: {fileID: 1640603931202854, guid: 875b8f00744fc26418da1e1bf971a8c6,
+      type: 3}
+    comboPriority: 1
+    isFinisher: 0
+    skipAttack: 0
+    attackLengthOverride: 0
+  - animationSpeedMultiplier: 1
+    isAttack: 1
+    attackMultiplier: 1.2
+    knockbackForce: 3
+    knockupForce: 5
+    attackAnimationName: GroundFinisher
+    animationName: groundCombo01_3
+    attackSpeedParameterName: Katana_AtkSpd_1
+    fxImpactPrefab: {fileID: 1837398281301428, guid: 40ccb30dafa67154abdb2c7efe0034a0,
+      type: 3}
+    fxAttackPrefab: {fileID: 1640603931202854, guid: 875b8f00744fc26418da1e1bf971a8c6,
+      type: 3}
+    comboPriority: 2
+    isFinisher: 0
+    skipAttack: 0
+    attackLengthOverride: 0
+  _airAttacks: []

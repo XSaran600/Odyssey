@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78b2425a2284af743826c689403a4924, type: 3}
+  m_Name: Get Global Tex Extras
+  m_EditorClassIdentifier: 
+  m_functionInfo: "// Made with Amplify Shader Editor\n// Available at the Unity Asset
+    Store - http://u3d.as/y3X \n/*ASEBEGIN\nVersion=18102\n1927;1;1906;1020;2386.231;681.8067;1.382065;True;False\nNode;AmplifyShaderEditor.Vector4Node;3;-1920,-128;Half;False;Global;TVE_ExtrasCoord;TVE_ExtrasCoord;50;0;Create;True;0;0;False;0;False;0,0,0,0;0.5,0.5,0.01,0;0;5;FLOAT4;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4\nNode;AmplifyShaderEditor.WorldPosInputsNode;35;-1920,128;Inherit;False;0;4;FLOAT3;0;FLOAT;1;FLOAT;2;FLOAT;3\nNode;AmplifyShaderEditor.FunctionNode;38;-1920,256;Inherit;False;Get
+    Object Position;-1;;1741;24ce84305b9542249ab6e9982668aab0;0;0;4;FLOAT3;7;FLOAT;0;FLOAT;4;FLOAT;5\nNode;AmplifyShaderEditor.FunctionNode;39;-1664,128;Inherit;False;Switch
+    by Position Float3;-1;;1740;5b40b68a21d90f04d8788ac1d606d090;0;2;6;FLOAT3;0,0,0;False;7;FLOAT3;0,0,0;False;1;FLOAT3;0\nNode;AmplifyShaderEditor.SwizzleNode;30;-1344,128;Inherit;False;FLOAT2;0;2;2;3;1;0;FLOAT3;0,0,0;False;1;FLOAT2;0\nNode;AmplifyShaderEditor.SwizzleNode;4;-1664,-128;Inherit;False;FLOAT2;0;1;2;3;1;0;FLOAT4;0,0,0,0;False;1;FLOAT2;0\nNode;AmplifyShaderEditor.SimpleMultiplyOpNode;5;-1024,0;Inherit;False;2;2;0;FLOAT;0;False;1;FLOAT2;0,0;False;1;FLOAT2;0\nNode;AmplifyShaderEditor.SamplerNode;7;-512,-128;Inherit;True;Global;TVE_ExtrasTex;TVE_ExtrasTex;0;1;[NoScaleOffset];Create;True;0;0;False;0;False;-1;None;;True;0;False;white;Auto;False;Object;-1;Auto;Texture2D;6;0;SAMPLER2D;;False;1;FLOAT2;0,0;False;2;FLOAT;0;False;3;FLOAT2;0,0;False;4;FLOAT2;0,0;False;5;FLOAT;1;False;5;COLOR;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4\nNode;AmplifyShaderEditor.SimpleAddOpNode;6;-768,-128;Inherit;False;2;2;0;FLOAT2;0,0;False;1;FLOAT2;0,0;False;1;FLOAT2;0\nNode;AmplifyShaderEditor.FunctionOutput;19;-128,-128;Inherit;False;False;-1;R;0;False;1;0;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.FunctionOutput;33;-128,160;Inherit;False;False;-1;A;3;False;1;0;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.FunctionOutput;22;-128,64;Inherit;False;False;-1;B;2;False;1;0;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.FunctionOutput;21;-128,-32;Inherit;False;True;-1;G;1;False;1;0;FLOAT;0;False;1;FLOAT;0\nWireConnection;39;6;35;0\nWireConnection;39;7;38;7\nWireConnection;30;0;39;0\nWireConnection;4;0;3;0\nWireConnection;5;0;3;3\nWireConnection;5;1;30;0\nWireConnection;7;1;6;0\nWireConnection;6;0;4;0\nWireConnection;6;1;5;0\nWireConnection;19;0;7;1\nWireConnection;33;0;7;4\nWireConnection;22;0;7;3\nWireConnection;21;0;7;2\nASEEND*/\n//CHKSM=0890B5E635AD3ABB50E785386011ED4B93877030"
+  m_functionName: 
+  m_description: 
+  m_additionalIncludes:
+    m_additionalIncludes: []
+    m_outsideIncludes: []
+  m_additionalPragmas:
+    m_additionalPragmas: []
+    m_outsidePragmas: []
+  m_additionalDirectives:
+    m_validData: 0
+    m_isDirty: 0
+    m_moduleName: ' Additional Directives'
+    m_independentModule: 1
+    m_additionalDirectives: []
+    m_shaderFunctionDirectives: []
+    m_nativeDirectives: []
+    m_nativeDirectivesIndex: -1
+    m_nativeDirectivesFoldout: 0
+    m_directivesSaveItems: []
+  m_nodeCategory: 0
+  m_customNodeCategory: The Vegetation Engine
+  m_previewPosition: 0
+  m_hidden: 1

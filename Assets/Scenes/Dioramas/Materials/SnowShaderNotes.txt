@@ -1,0 +1,21 @@
+Snow Shader Notes
+
+Heavily Influenced by:
+- "TrailsParticleSystem" 	| found under player hiearchy 
+Alters what particles are being rendered to the CameraTrailer
+
+
+- "CameraTrailer" 		| in World Scene hiearchy
+Controls the orthographic camera that reads the particle system influencing the displacement
+Clipping planes influence what is being displace height wise
+
+
+- "SnowShader"			| in SGs folder
+Affects how the shader renders the geomerty and visuals
+
+
+- "mAsh"			| in Ash Mat folder
+Change trail and world texture
+Affects the height height displacement via "Trail radius" and "Height Multiple"
+Note if "HeightMultiple" is too high, player will float in the air
+

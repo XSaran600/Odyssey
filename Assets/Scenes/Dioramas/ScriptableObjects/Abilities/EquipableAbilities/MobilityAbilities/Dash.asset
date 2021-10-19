@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f62fb908ccfdaae48947a47e1954fa15, type: 3}
+  m_Name: Dash
+  m_EditorClassIdentifier: 
+  pointCost: 3
+  inUse: 0
+  comboLengthMod: 0
+  attackInfo:
+    animationSpeedMultiplier: 1
+    isAttack: 1
+    attackMultiplier: 1
+    knockbackForce: 0
+    knockupForce: 0
+    attackAnimationName: Dash
+    animationName: AirDash
+    attackSpeedParameterName: Dash
+    fxImpactPrefab: {fileID: 0}
+    fxAttackPrefab: {fileID: 0}
+    comboPriority: 1.9
+    isFinisher: 0
+    skipAttack: 0
+    attackLengthOverride: 0
+  Notes: Move in direction and hold X button

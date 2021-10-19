@@ -1,0 +1,24 @@
+*******************************************************************
+*                             INFO                                *
+*******************************************************************
+
+InfoPreset Use this preset to convert Nature Manufacture Trees, Bushes and Plants. Variation is not supported, use the Elasticity motion parameters instead! Choose preset A if there are issues with a specific environment assets!
+InfoStatus Good motion quality, Procedural variation (Slow), Procedural capsule vertex occlusion
+InfoOnline https://assetstore.unity.com/publishers/6887
+
+*******************************************************************
+*                             PRESET                              *
+*******************************************************************
+
+Conversion DYNAMIC
+
+Mesh Variation GET_MASK_PROCEDURAL 3
+Mesh Occlusion GET_MASK_PROCEDURAL 7
+Mesh DetailMask NONE
+Mesh DetailCoord GET_COORD_FROM_CHANNEL 2
+
+Mesh Motion1 GET_MASK_PROCEDURAL 4
+Mesh Motion2 GET_MASK_FROM_CHANNEL 3
+Mesh Motion3 GET_MASK_FROM_CHANNEL 3
+
+Include Nature Manufacture Foliage Standard

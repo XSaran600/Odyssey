@@ -1,0 +1,69 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: moColumn
+  m_Shader: {fileID: -6465566751694194690, guid: fc1d86bc679583a4ebef55b665c50bdf,
+    type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap:
+    MotionVector: User
+  disabledShaderPasses:
+  - MOTIONVECTORS
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - Texture2D_4FED7601:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - Texture2D_524725B3:
+        m_Texture: {fileID: 2800000, guid: 5ff2fac0aa23a084eb9e6cd2cc29a880, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - Texture2D_6212A5DD:
+        m_Texture: {fileID: 2800000, guid: 6869a542fca62cb4fb412f6415869286, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - Texture2D_F5F85B9C:
+        m_Texture: {fileID: 2800000, guid: 5bfb1a5cb21e04c40a3585e423653890, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - Texture2D_FEA3BBA:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SampleTexture2D_C9AAE8E8_Texture_1:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - Vector1_11E67769: 0
+    - Vector1_1A34F828: 0
+    - Vector1_248DBC65: 1
+    - Vector1_389821E9: 0.1
+    - Vector1_3F028F21: 3.4
+    - Vector1_3F75B062: 0.3
+    - Vector1_486F5D75: 0.2
+    - Vector1_5360FAC4: 3.12
+    - Vector1_65AD93: 1500
+    - Vector1_829852A: 0
+    - Vector1_93CF1D9F: 0.33
+    - Vector1_B138A392: 1
+    - Vector1_BE41E1D4: 0.49
+    - Vector1_FF721C8C: 10.91
+    m_Colors:
+    - Color_9295968: {r: 2, g: 2, b: 2, a: 0}
+    - Color_C34CDB9F: {r: 1, g: 1, b: 1, a: 0}
+    - Vector2_393CD3C2: {r: 0, g: 0, b: 0, a: 0}
+    - Vector2_8C745085: {r: 0, g: 0, b: 0, a: 0}
+    - Vector2_D2BE13E3: {r: 1.5, g: 1.5, b: 0, a: 0}

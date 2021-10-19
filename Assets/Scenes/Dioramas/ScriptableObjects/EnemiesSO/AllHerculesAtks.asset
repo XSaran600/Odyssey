@@ -1,0 +1,312 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 18397316ccad05942b9e9992defcee2a, type: 3}
+  m_Name: AllHerculesAtks
+  m_EditorClassIdentifier: 
+  _health: 200
+  _maxHP: 200
+  _power: 5
+  _iFramesLength: 0
+  _comboAttacks:
+    power: 1
+    cooldownAfterComboEndGround: 0.5
+    cooldownAfterComboEndAir: 1
+    comboBufferTimePercentage: 99.9
+    queueAttackBufferTimePercentage: 50
+    combosArray:
+    - comboSetName: DoNotUse
+      attacks:
+      - animationSpeedMultiplier: 1
+        defaultAttackSpeedMultiplier: 1
+        isAttack: 0
+        attackMultiplier: 2
+        knockbackForce: 33
+        knockupForce: 1
+        attackAnimationName: Dodge(right)
+        animationName: Dodge(right)
+        attackSpeedParameterName: idle
+        fxImpactPrefab: {fileID: 0}
+        fxAttackPrefab: {fileID: 0}
+        comboPriority: 0
+        isFinisher: 0
+        skipAttack: 0
+        attackLengthOverride: 0
+      - animationSpeedMultiplier: 1
+        defaultAttackSpeedMultiplier: 1
+        isAttack: 0
+        attackMultiplier: 2
+        knockbackForce: 33
+        knockupForce: 1
+        attackAnimationName: Shield
+        animationName: Shield
+        attackSpeedParameterName: idle
+        fxImpactPrefab: {fileID: 0}
+        fxAttackPrefab: {fileID: 0}
+        comboPriority: 0
+        isFinisher: 0
+        skipAttack: 0
+        attackLengthOverride: 0
+      - animationSpeedMultiplier: 1
+        defaultAttackSpeedMultiplier: 1
+        isAttack: 0
+        attackMultiplier: 2
+        knockbackForce: 33
+        knockupForce: 1
+        attackAnimationName: Ceryneian 1_001
+        animationName: Ceryneian 1.001
+        attackSpeedParameterName: idle
+        fxImpactPrefab: {fileID: 0}
+        fxAttackPrefab: {fileID: 0}
+        comboPriority: 0
+        isFinisher: 0
+        skipAttack: 0
+        attackLengthOverride: 0
+      - animationSpeedMultiplier: 1
+        defaultAttackSpeedMultiplier: 1
+        isAttack: 0
+        attackMultiplier: 2
+        knockbackForce: 33
+        knockupForce: 1
+        attackAnimationName: Ceryneian 2_001
+        animationName: Ceryneian 2.001
+        attackSpeedParameterName: idle
+        fxImpactPrefab: {fileID: 0}
+        fxAttackPrefab: {fileID: 0}
+        comboPriority: 0
+        isFinisher: 0
+        skipAttack: 0
+        attackLengthOverride: 0
+      - animationSpeedMultiplier: 1
+        defaultAttackSpeedMultiplier: 1
+        isAttack: 0
+        attackMultiplier: 2
+        knockbackForce: 33
+        knockupForce: 1
+        attackAnimationName: Ceryneian 3_001
+        animationName: Ceryneian 3.001
+        attackSpeedParameterName: idle
+        fxImpactPrefab: {fileID: 0}
+        fxAttackPrefab: {fileID: 0}
+        comboPriority: 0
+        isFinisher: 0
+        skipAttack: 0
+        attackLengthOverride: 0
+      - animationSpeedMultiplier: 1
+        defaultAttackSpeedMultiplier: 1
+        isAttack: 0
+        attackMultiplier: 2
+        knockbackForce: 33
+        knockupForce: 1
+        attackAnimationName: Hydra Barrage 1
+        animationName: Hydra Barrage 1
+        attackSpeedParameterName: idle
+        fxImpactPrefab: {fileID: 0}
+        fxAttackPrefab: {fileID: 0}
+        comboPriority: 0
+        isFinisher: 0
+        skipAttack: 0
+        attackLengthOverride: 0
+      - animationSpeedMultiplier: 1
+        defaultAttackSpeedMultiplier: 1
+        isAttack: 0
+        attackMultiplier: 2
+        knockbackForce: 33
+        knockupForce: 1
+        attackAnimationName: Hydra Barrage 2
+        animationName: Hydra Barrage 2.001
+        attackSpeedParameterName: idle
+        fxImpactPrefab: {fileID: 0}
+        fxAttackPrefab: {fileID: 0}
+        comboPriority: 0
+        isFinisher: 0
+        skipAttack: 0
+        attackLengthOverride: 0
+      - animationSpeedMultiplier: 1
+        defaultAttackSpeedMultiplier: 1
+        isAttack: 0
+        attackMultiplier: 2
+        knockbackForce: 33
+        knockupForce: 1
+        attackAnimationName: Hydra Barrage 3
+        animationName: Hydra Barrage 3.001
+        attackSpeedParameterName: idle
+        fxImpactPrefab: {fileID: 0}
+        fxAttackPrefab: {fileID: 0}
+        comboPriority: 0
+        isFinisher: 0
+        skipAttack: 0
+        attackLengthOverride: 0
+      - animationSpeedMultiplier: 1
+        defaultAttackSpeedMultiplier: 1
+        isAttack: 0
+        attackMultiplier: 2
+        knockbackForce: 33
+        knockupForce: 1
+        attackAnimationName: Wrath of the lion
+        animationName: Wrath of the lion
+        attackSpeedParameterName: idle
+        fxImpactPrefab: {fileID: 0}
+        fxAttackPrefab: {fileID: 0}
+        comboPriority: 0
+        isFinisher: 0
+        skipAttack: 0
+        attackLengthOverride: 0
+      - animationSpeedMultiplier: 1
+        defaultAttackSpeedMultiplier: 1
+        isAttack: 0
+        attackMultiplier: 2
+        knockbackForce: 33
+        knockupForce: 1
+        attackAnimationName: Hunt 1
+        animationName: Hypolita Hunt 1.001
+        attackSpeedParameterName: idle
+        fxImpactPrefab: {fileID: 0}
+        fxAttackPrefab: {fileID: 0}
+        comboPriority: 0
+        isFinisher: 0
+        skipAttack: 0
+        attackLengthOverride: 0
+      - animationSpeedMultiplier: 1
+        defaultAttackSpeedMultiplier: 1
+        isAttack: 0
+        attackMultiplier: 2
+        knockbackForce: 33
+        knockupForce: 1
+        attackAnimationName: Hunt 2
+        animationName: Hypolita Hunt 2.001
+        attackSpeedParameterName: idle
+        fxImpactPrefab: {fileID: 0}
+        fxAttackPrefab: {fileID: 0}
+        comboPriority: 0
+        isFinisher: 0
+        skipAttack: 0
+        attackLengthOverride: 0
+      - animationSpeedMultiplier: 1
+        defaultAttackSpeedMultiplier: 1
+        isAttack: 0
+        attackMultiplier: 2
+        knockbackForce: 33
+        knockupForce: 1
+        attackAnimationName: Diverging 1
+        animationName: Diverging Alpheus 1.001
+        attackSpeedParameterName: idle
+        fxImpactPrefab: {fileID: 0}
+        fxAttackPrefab: {fileID: 0}
+        comboPriority: 0
+        isFinisher: 0
+        skipAttack: 0
+        attackLengthOverride: 0
+      - animationSpeedMultiplier: 1
+        defaultAttackSpeedMultiplier: 1
+        isAttack: 0
+        attackMultiplier: 2
+        knockbackForce: 33
+        knockupForce: 1
+        attackAnimationName: Diverging 2
+        animationName: Diverging Alpheus 2.001
+        attackSpeedParameterName: idle
+        fxImpactPrefab: {fileID: 0}
+        fxAttackPrefab: {fileID: 0}
+        comboPriority: 0
+        isFinisher: 0
+        skipAttack: 0
+        attackLengthOverride: 0
+      - animationSpeedMultiplier: 1
+        defaultAttackSpeedMultiplier: 1
+        isAttack: 0
+        attackMultiplier: 2
+        knockbackForce: 33
+        knockupForce: 1
+        attackAnimationName: Snipe 1
+        animationName: Stymphalian Snipe 1.001
+        attackSpeedParameterName: idle
+        fxImpactPrefab: {fileID: 0}
+        fxAttackPrefab: {fileID: 0}
+        comboPriority: 0
+        isFinisher: 0
+        skipAttack: 0
+        attackLengthOverride: 0
+      - animationSpeedMultiplier: 1
+        defaultAttackSpeedMultiplier: 1
+        isAttack: 0
+        attackMultiplier: 2
+        knockbackForce: 33
+        knockupForce: 1
+        attackAnimationName: Snipe 2
+        animationName: Stymphalian Snipe 2.001
+        attackSpeedParameterName: idle
+        fxImpactPrefab: {fileID: 0}
+        fxAttackPrefab: {fileID: 0}
+        comboPriority: 0
+        isFinisher: 0
+        skipAttack: 0
+        attackLengthOverride: 0
+      - animationSpeedMultiplier: 1
+        defaultAttackSpeedMultiplier: 1
+        isAttack: 0
+        attackMultiplier: 2
+        knockbackForce: 33
+        knockupForce: 1
+        attackAnimationName: Rage 1
+        animationName: Rage 1
+        attackSpeedParameterName: idle
+        fxImpactPrefab: {fileID: 0}
+        fxAttackPrefab: {fileID: 0}
+        comboPriority: 0
+        isFinisher: 0
+        skipAttack: 0
+        attackLengthOverride: 0
+      - animationSpeedMultiplier: 1
+        defaultAttackSpeedMultiplier: 1
+        isAttack: 0
+        attackMultiplier: 2
+        knockbackForce: 33
+        knockupForce: 1
+        attackAnimationName: Rage 2_001
+        animationName: Rage 2.001
+        attackSpeedParameterName: idle
+        fxImpactPrefab: {fileID: 0}
+        fxAttackPrefab: {fileID: 0}
+        comboPriority: 0
+        isFinisher: 0
+        skipAttack: 0
+        attackLengthOverride: 0
+      - animationSpeedMultiplier: 1
+        defaultAttackSpeedMultiplier: 1
+        isAttack: 0
+        attackMultiplier: 2
+        knockbackForce: 33
+        knockupForce: 1
+        attackAnimationName: Rage 3_001
+        animationName: Rage 3.001
+        attackSpeedParameterName: idle
+        fxImpactPrefab: {fileID: 0}
+        fxAttackPrefab: {fileID: 0}
+        comboPriority: 0
+        isFinisher: 0
+        skipAttack: 0
+        attackLengthOverride: 0
+      - animationSpeedMultiplier: 1
+        defaultAttackSpeedMultiplier: 1
+        isAttack: 0
+        attackMultiplier: 2
+        knockbackForce: 33
+        knockupForce: 1
+        attackAnimationName: Rage 4
+        animationName: Rage 4
+        attackSpeedParameterName: idle
+        fxImpactPrefab: {fileID: 0}
+        fxAttackPrefab: {fileID: 0}
+        comboPriority: 0
+        isFinisher: 0
+        skipAttack: 0
+        attackLengthOverride: 0

@@ -1,0 +1,3 @@
+// Disable Features for Opaque
+Material RENDERTYPE_TAG_TO_SHADER Opaque VEGETATION_STANDARD
+Material RENDERTYPE_TAG_TO_FLOAT Opaque _render_clip 0

@@ -1,0 +1,38 @@
+*******************************************************************
+*                             INFO                                *
+*******************************************************************
+
+InfoPreset Use this preset to convert IL.ranch Trees Bundle assets. The conversion is procedural and might not work as expected!
+InfoStatus Procedural motion, Procedural variation (Slow), Procedural moss mask, Procedural capsule vertex occlusion
+InfoOnline https://assetstore.unity.com/packages/3d/vegetation/trees/trees-bundle-159805
+
+*******************************************************************
+*                             PRESET                              *
+*******************************************************************
+
+Conversion DYNAMIC
+
+Mesh Variation GET_MASK_PROCEDURAL 3
+Mesh Occlusion GET_MASK_PROCEDURAL 7
+Mesh DetailMask GET_MASK_PROCEDURAL 8
+Mesh DetailCoord GET_COORD_FROM_CHANNEL 0
+
+Mesh Motion1 GET_MASK_PROCEDURAL 4
+Mesh Motion2 GET_MASK_PROCEDURAL 7
+Mesh Motion3 GET_MASK_FROM_CHANNEL 5
+
+Mesh Hierarchy NONE
+Mesh Pivots NONE
+Mesh Directions NONE
+
+// Enable Material Features
+Material SET_FLOAT _GlobalSize 0
+Material SET_FLOAT _GlobalSizeFade 0
+
+// Include Unity Default Features
+Include Bark by RenderType
+Include Bark by HD Clip Settings
+Include Unity Lit Commons
+
+// Disable double sided
+Material SET_FLOAT _render_cull 2

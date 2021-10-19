@@ -1,0 +1,2 @@
+The Link gameobject allows creating links between gameobjects properties, such as Global Wetness wetness property and Rain Maker RainIntensity property (free rain asset).
+If the Link is valid the text will be green and the properties are linked.

@@ -1,0 +1,3 @@
+Make sure you duplicate the prefabs before using them, because there might be some changes which will override your settings!
+Make sure you assign the correct Layer for Trail Prefabs to be renderd by the volumes.
+

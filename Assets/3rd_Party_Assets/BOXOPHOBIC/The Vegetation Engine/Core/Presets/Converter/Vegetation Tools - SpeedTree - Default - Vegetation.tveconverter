@@ -1,0 +1,27 @@
+*******************************************************************
+*                             INFO                                *
+*******************************************************************
+
+Include SpeedTree Default Info
+InfoOnline https://assetstore.unity.com/publishers/9474
+
+*******************************************************************
+*                             PRESET                              *
+*******************************************************************
+
+Conversion DYNAMIC
+
+// Set Mesh Masks
+Mesh Variation GET_MASK_FROM_CHANNEL 7 ACTION_REMAP01
+Mesh Occlusion GET_MASK_FROM_CHANNEL 0
+Mesh DetailMask GET_MASK_PROCEDURAL 8
+Mesh DetailCoord GET_COORD_FROM_CHANNEL 0
+
+Mesh Motion1 GET_MASK_PROCEDURAL 4
+Mesh Motion2 GET_MASK_FROM_CHANNEL 6
+Mesh Motion3 GET_MASK_FROM_CHANNEL 16
+
+// Set Material Shader
+Include SpeedTree Commons Extras Setup
+
+Material SET_COLOR _SubsurfaceColor 0.33 0.50 0 0

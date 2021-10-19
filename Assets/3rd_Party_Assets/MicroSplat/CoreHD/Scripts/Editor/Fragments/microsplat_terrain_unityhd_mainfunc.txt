@@ -1,0 +1,80 @@
+
+
+
+
+
+
+
+    
+    MicroSplatLayer DoMicroSplat(inout SurfaceDescriptionInputs IN)
+    {
+       SurfaceDescription surface = (SurfaceDescription)0;
+       Input i = DescToInput(IN);
+       float3 worldNormalVertex = IN.WorldSpaceNormal;
+
+        #if defined(ENABLE_TERRAIN_PERPIXEL_NORMAL) && !_MICROMESH && !_MICROMESHTERRAIN && !_MICROPOLARISMESH && !_MICRODIGGERMESH && !_MICROVERTEXMESH
+            float2 terrainNormalMapUV = (i.uv_Control0.xy + 0.5f) * _TerrainHeightmapRecipSize.xy;
+            i.uv_Control0.xy *= _TerrainHeightmapRecipSize.zw;
+            
+
+            #if _TOONHARDEDGENORMAL
+               terrainNormalMapUV = ToonEdgeUV(terrainNormalMapUV);
+            #endif
+            float3 geomNormal = normalize(SAMPLE_TEXTURE2D(_TerrainNormalmapTexture, sampler_TerrainNormalmapTexture, terrainNormalMapUV).xyz * 2 - 1);
+
+            worldNormalVertex = mul((float3x3)GetObjectToWorldMatrix(), geomNormal);
+            IN.WorldSpaceNormal = worldNormalVertex;
+            float4 tangentWS = ConstructTerrainTangent(IN.WorldSpaceNormal, GetObjectToWorldMatrix()._13_23_33);
+            IN.WorldSpaceTangent = tangentWS.xyz;
+            i.TBN = BuildTangentToWorld(tangentWS, IN.WorldSpaceNormal.xyz);
+            IN.WorldSpaceBiTangent = i.TBN[1].xyz;
+        #elif _PERPIXNORMAL
+            float2 perPixUV = i.uv_Control0;
+            #if _TOONHARDEDGENORMAL
+               perPixUV = ToonEdgeUV(perPixUV);
+            #endif
+            float3 geomNormal = (UnpackNormal(UNITY_SAMPLE_TEX2D_SAMPLER(_PerPixelNormal, _Diffuse, perPixUV))).xzy;
+            worldNormalVertex = geomNormal;
+        #endif    
+        
+         
+         #if _SRPTERRAINBLEND
+            SurfaceOutputCustom soc = (SurfaceOutputCustom)0;
+            soc.input = i;
+            float3 sh = 0;
+            BlendWithTerrainSRP(soc, IN.WorldSpaceTangent, IN.WorldSpaceBiTangent, IN.WorldSpaceNormal);
+
+            MicroSplatLayer l = (MicroSplatLayer)0;
+            l.Albedo = soc.Albedo;
+            l.Normal = mul(float3x3(IN.WorldSpaceTangent, IN.WorldSpaceBiTangent, IN.WorldSpaceNormal), soc.Normal);
+            l.Emission = soc.Emission;
+            l.Metallic = soc.Metallic;
+            l.Smoothness = soc.Smoothness;
+            #if _USESPECULARWORKFLOW
+               l.Specular = soc.Specular;
+            #endif
+            l.Occlusion = soc.Occlusion;
+            l.Alpha = soc.Alpha;
+
+         #else
+            MicroSplatLayer l = SurfImpl(i, worldNormalVertex);
+         #endif
+
+
+       // per pixel normal
+        #if ((defined(ENABLE_TERRAIN_PERPIXEL_NORMAL)) && !_MICROMESHTERRAIN && !_MICROMESH && !_MICROVERTEXMESH && !_MICRODIGGERMESH && !_MICROPOLARISMESH) || (_MICROMESHTERRAIN && _PERPIXNORMAL)
+            float3 geomTangent = normalize(cross(geomNormal, float3(0, 0, 1)));
+            float3 geomBitangent = normalize(cross(geomTangent, geomNormal));
+            l.Normal = l.Normal.x * geomTangent + l.Normal.y * geomBitangent + l.Normal.z * geomNormal;
+            l.Normal = l.Normal.xzy;
+        #endif
+
+        DoDebugOutput(l);
+
+
+        return l;
+    }
+
+
+
+        
